@@ -20,8 +20,6 @@ export default function Plano(props) {
 
     useEffect(() => {
         if (JSON.stringify(offer) !== "{}") setPrices(setOfferTime());
-        console.log(prices)
-        console.log(plan)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [plan, selectedTime, prices]);
 
