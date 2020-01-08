@@ -1,0 +1,160 @@
+.container-plano {
+    background: #FFFFFF;
+    width: 350px;
+    max-width: 95%;
+    margin: 25px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.container-plano-selected-topo {
+    border-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    opacity: 1;
+    background: #FF6A17;
+    height: 10px;
+}
+
+.container-plano-selected-bottom {
+    background: #FF6A17;
+    height: 5px;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.container-img-plano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #DFECFF;
+    padding: 25px 0 25px 0;
+}
+
+.container-img-plano img{
+    padding: 10px 0 10px 0;
+}
+
+.text-1-plano {
+    font: 26px/26px MontserratBold;
+    color: #1D5297;
+}
+
+.container-price-plano {
+    padding: 25px;
+    border-bottom: 1px solid #DFECFF;
+}
+
+.container-price-text {
+    display: flex;
+    justify-content: center;
+}
+
+.price-1 {
+    text-decoration: line-through;
+    font: 14px/19px MontserratRegular;
+    color: #333333;
+}
+
+.price-2 {
+    font: 14px/19px MontserratBold;
+    color: #333333;
+    margin-left: 5px;
+}
+
+.text-2-plano {
+    text-align: center;
+    font: 13px/19px MontserratRegular;
+    letter-spacing: 0;
+    color: #333333
+}
+
+.price-3 {
+    margin-top: 5px;
+    text-align: center;
+    font: 20px/24px MontserratRegular;
+    color: #1D5297;
+}
+
+.price-3-bold {
+    font: 35px/24px MontserratBold;
+    color: #1D5297;
+}
+
+.container-button-plano {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.container-button-plano button {
+    background: #4480C5 0% 0% no-repeat padding-box;
+    border-radius: 26px;
+    outline: none;
+    border: none;
+    font: 22px/27px MontserratBold;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 279px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.container-dominio-plano {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font: 15px/20px MontserratBold;
+    letter-spacing: 0;
+    color: #333333;
+}
+
+.container-economize-plano {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 14px/18px MontserratRegular;
+    color: #1D5297;
+    opacity: 1;
+}
+
+.desconto-40off {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #51C99C;
+    border-radius: 24px;
+    font:14px/18px MontserratBold;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    width: 80px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.container-info-plano {
+    padding: 25px;
+    border-bottom: 1px solid #DFECFF;
+    text-align: left;
+    font: 16px/32px MontserratRegular;
+    letter-spacing: 0;
+    color: #333333;
+}
+
+.info-plano-bold {
+    font:16px/32px MontserratBold;
+}
+
+.info-plano-sublinhado-dash {
+    border-bottom: 1px dashed #9EB8DC;
+}
+
+.info-plano-sublinhado {
+    border-bottom: 1px solid #333333;
+}
