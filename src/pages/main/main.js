@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import Header from "../../components/header/header";
 import ChooseTime from "../../components/chooseTime/chooseTime";
 import Plano from "../../components/plano/plano";
+import Carousel from "../../components/carousel/carousel";
 
 import { planoMenus } from "../../helpers/plano.helpers";
 import { setOffers } from "../../actions/main.actions";
@@ -12,6 +13,7 @@ import api from "../../services/api";
 import Office from "../../assets/office.svg";
 import Man from "../../assets/man-right.svg";
 import Check from "../../assets/icon-check.svg";
+import ArrowDown from "../../assets/seta-baixo.svg";
 
 import "./main.css";
 export default function Main() {
@@ -27,6 +29,10 @@ export default function Main() {
             const { data } = await api.get("");
             setOffers(dispatch, data.shared.products);
         } catch (err) {}
+    };
+
+    const scrollElement = () => {
+        document.getElementsByClassName('container-planos')[0].scrollIntoView({ behavior: "smooth" });
     };
 
     return (
@@ -60,16 +66,22 @@ export default function Main() {
                     <img alt="man" src={Man} />
                 </div>
             </div>
+            <div className='container-arrowDown'>
+                <img src={ArrowDown} onClick={scrollElement} alt='Arrow' />
+            </div>
             <div className="text-3">Quero pagar a cada:</div>
             <ChooseTime />
             <div className="container-planos">
+                <Carousel>
+                    {planoMenus.map(plano => (
+                        <Plano key={plano} plano={plano} />
+                    ))}
+                </Carousel>
                 {planoMenus.map(plano => (
                     <Plano key={plano} plano={plano} />
                 ))}
             </div>
-            <div className='confiraCondicoes'>
-                *Confira as condições da promoção
-            </div>
+            <div className="confiraCondicoes">*Confira as condições da promoção</div>
         </>
     );
 }

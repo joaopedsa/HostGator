@@ -90,6 +90,22 @@
     margin-left: 45%;
 }
 
+.container-arrowDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+}
+
+.container-arrowDown img{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container-arrowDown img:hover{
+    transform: scale(1.1);
+}
+
 @media (max-width: 1025px) {
     .container-mains-imgs {
         display: none;
@@ -111,6 +127,10 @@
     .text-1 {
         text-align: center;
         padding: 0 50px 0 50px;
+    }
+
+    .container-planos {
+        justify-content: flex-start;
     }
 
     @media (max-width: 350px) {

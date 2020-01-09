@@ -87,7 +87,7 @@ export default function Plano(props) {
     };
 
     return (
-        <div className="container-plano">
+        <div className="container-plano" id={props.plano}>
             {props.plano === 'Plano M' ? <div className='container-plano-selected-topo'></div> : null}
             <div className="container-img-plano">
                 <img alt="plano" src={renderPlan()} />
